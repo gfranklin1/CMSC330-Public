@@ -4,9 +4,13 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ## Projects 
 
-### Project 1: ****
+### Project 1: **Ocaml Warmup**
 **Description:**  
-
+- Implemented recursive and higher-order functions in OCaml.
+- Designed list manipulation algorithms (`reverse`, `merge`, `zip`, `every_nth`).
+- Created numeric functions (`fibonacci`, `power`, `logarithm`, `GCD`).
+- Used fold to implement higher-order functions, including uniqueness filtering and element counting (`there_is`, `count_occ`, `uniq`, `every_xth`).
+- Used functional programming principles (immutability, recursion, no imperative structures).
 
 **Grade:** 
 
