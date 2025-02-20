@@ -12,7 +12,7 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 - Used fold to implement higher-order functions, including uniqueness filtering and element counting (`there_is`, `count_occ`, `uniq`, `every_xth`).
 - Used functional programming principles (immutability, recursion, no imperative structures).
 
-**Grade:** 
+**Grade:** 100/100
 
 ---
 
