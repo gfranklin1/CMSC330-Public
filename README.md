@@ -16,11 +16,22 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 2: ****
+### Project 2: **HOFs on Trees & Database Design**
 **Description:**  
+- Part 1 (Database Design)
+  - Designed a functional database in OCaml to store `person` records with `name`, `age`, and `hobbies`.
+  - Implemented core operations: `insert`, `remove`, `sort`, `query`, `update`, and `deleteAll`.
+  - Used higher-order functions to evaluate complex conditions (`And`, `Or`, `Not`, `If`) for querying/updating entries.
+  - Supported comparator-based sorting and conditional data transformations.
+  - Leveraged OCaml's variant types and pattern matching for condition evaluation.
+- Part 2 (Higher Order Functions on Trees)
+  - Created a `tree_fold` function to abstract tree traversal logic.
+  - Built `map`, `mirror`, `in_order`, `pre_order`, `depth`, and `trim` using `tree_fold`.
+  - Implemented `compose` to generate function compositions from tree nodes.
+  - Reconstructed binary trees from pre-order and in-order traversals (`from_pre_in`).
+  - Used recursion and functional programming to handle tree operations without imperative features.
 
-
-**Grade:** 
+**Grade:** 100/100
 
 ---
 
