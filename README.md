@@ -35,11 +35,16 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 3: ****
+### Project 3: **Regular Expression Engine**
 **Description:**  
+- Implemented a comprehensive **Regular Expression Engine** capable of simulating and manipulating **NFAs (Non-deterministic Finite Automata)** and **DFAs (Deterministic Finite Automata)**.
+- Developed the `accept` function to determine whether a given string is accepted by an NFA.
+- Applied the **subset construction algorithm** to convert NFAs to equivalent DFAs.
+- Built the `regex_to_nfa` function to translate regular expressions into NFAs using state transitions.
+- Leveraged functional programming principles to ensure clean, maintainable code with no side effects.
+- Utilized OCaml modules, including `Stdlib`, `List`, `Char`, and `String`, adhering to strict coding guidelines.
 
-
-**Grade:** 
+**Grade:** 100/100 
 
 ---
 
