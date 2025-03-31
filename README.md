@@ -48,11 +48,25 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 4: ****
+### Project 4: **SmallC Lexer, Parser, and Evaluator**  
 **Description:**  
+- Implemented a **lexer**, **parser**, and **evaluator** for a simplified C language in OCaml.  
+  - **Lexer**:  
+    - Converted input strings into tokens using regular expressions (OCaml `Re` module).  
+    - Covered **core C syntax** (though not exhaustive), including:  
+      - **Keywords**: Control flow (`if`, `else`, `for`, `while`), types (`int`, `bool`), I/O (`printf`)  
+      - **Operators**: Arithmetic (`+`, `-`, `*`, `/`, `^`), logical (`&&`, `||`, `!`), comparisons (`==`, `!=`, `<`, `<=`)  
+      - **Literals/Identifiers**: Integers, booleans (`true`/`false`), variables  
+      - **Syntax**: Braces, semicolons, parentheses  
+    - Resolved ambiguities (e.g., `!=` vs `!`) via longest-match prioritization.  
+  - **Parser**:  
+    - Built a **recursive descent parser** to construct an **abstract syntax tree**.  
+    - Handled **essential C constructs**: variable declarations, assignments, loops, conditionals, and expressions with precedence.  
+  - **Evaluator**:  
+    - Simulated runtime execution with type checking (`int`/`bool`), scoping, and error handling (e.g., division by zero).  
+    - Supported **C-like semantics** for control flow (e.g., `for` loops with bounds, `while` conditions).  
 
-
-**Grade:** 
+**Grade**: 100/100  
 
 ---
 
