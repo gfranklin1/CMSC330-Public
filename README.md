@@ -70,11 +70,24 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 5: ****
+### Project 5: **SmallC Optimizer & Type System**  
 **Description:**  
+- Continuation of Project 4, with the addition of an **optimizer**, **type checker**, and **type inferencer** for a simplified C language in OCaml.
+  - **Optimizer**  
+    - **Constant folding** (e.g. `(3+4)*6 → 42`), **constant propagation**, and **branch folding** (`if true then s1 else s2 → s1`).  
+    - **Loop simplifications**: remove dead `while(false)` loops, simplify `for` when bounds are known, preserve the initial binding on empty loops.  
+    - Raises `DivByZeroError` on compile‑time division by zero and `DeclareError` on unbound variables.  
+  - **Type checker**  
+    - Syntax‑directed check over the same SmallC AST, with support for `Int_Type`, `Bool_Type`, and `Unknown_Type _`.  
+    - Environment threading through sequenced statements, proper merge of branch environments in `if`.  
+    - Raises `TypeError` for mismatches and `DeclareError` for uses of undeclared identifiers.  
+  - **Type inferencer**  
+    - Constraint‑solving type inference for `read()` (“`Value`”) unknowns: generates constraints, unifies (with occurs‑check), and rebuilds the AST with all `Unknown_Type _` resolved to either `Int_Type` or `Bool_Type`.  
+    - Correctly threads environments through `while` and `for` so that loop‑body bindings aren’t lost.  
+    - Verifies the final, annotated AST with the same `typecheck` to guarantee soundness.  
 
-
-**Grade:** 
+**Grade:** 94/100
+- Passed 35/37 tests.
 
 ---
 
@@ -84,6 +97,13 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 **Grade:** 
 
+---
+
+### Project 7: ****
+**Description:**  
+
+
+**Grade:** 
 
 ---
 
