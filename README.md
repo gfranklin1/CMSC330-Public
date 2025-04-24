@@ -91,11 +91,34 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 6: ****
-**Description:**  
+### Project 6: **Rust Intro**
+**Description:**
+- Implemented **6 core functions** in Rust to familiarize with syntax, safety, and standard library features.  
+- **Key Functions:**  
+  - **Gauss Sum**:  
+    - Computed the sum of integers from 1 to `n` using the formula `(n*(n+1))/2`.  
+    - Returned `None` for non-positive inputs.  
+  - **Double Up and Dance**:  
+    - Doubled elements in a slice to create a new `Vec`.  
+    - Modified the fifth element of the new vector by multiplying it with the second element of the original slice (if length ≥5).  
+  - **Binary String Conversion**:  
+    - Converted unsigned integers to binary strings without leading zeros (e.g., `9` → `"1001"`).  
+  - **Range Counting**:  
+    - Counted elements in an iterator within a given `Range<i32>` (start inclusive, end exclusive).  
+  - **In-Place Capitalization**:  
+    - Capitalized the first letter of each string in a mutable iterator (e.g., `"hello"` → `"Hello"`).  
+  - **Vending Machine Parser**:  
+    - Parsed a file into a `HashMap` of item-price pairs using regex validation.  
+    - Enforced rules: prices 1-50 cents, no duplicates, and strict line formatting (e.g., `item; 50c`).  
+    - Returned `None` for invalid lines, duplicates, or prices outside bounds.  
 
+**Rust Features Used:**  
+- **Iterators**: Leveraged `impl IntoIterator` for flexible input handling.  
+- **Regex Crate**: Validated file lines with patterns like `^[A-Za-z][A-Za-z ]*;\s*([1-9]|50|[1-4][0-9])\s*(c|cents)$`.  
+- **Error Handling**: Used `Option` types and early returns for invalid inputs.  
+- **Memory Safety**: Modified strings in-place via mutable references (`&mut String`).  
 
-**Grade:** 
+**Grade:** 100/100 
 
 ---
 
