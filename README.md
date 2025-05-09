@@ -122,11 +122,24 @@ Welcome to my repository for ```CMSC330 - Organization of Programming Languages`
 
 ---
 
-### Project 7: ****
-**Description:**  
+### Project 7: **Garbage Collector**
+**Description:**
+- Implemented three classic **garbage collection algorithms** in Rust:
+  - **Reference Counting**:
+    - Managed memory in a fixed-size heap of 10 cells.
+    - Maintained reference counts for dynamically allocated data.
+    - Deallocated heap entries when their count reached zero, including cascading deletions through a manual queue-based approach.
+  - **Mark and Sweep**:
+    - Identified all **reachable objects** from the stack using a BFS-style traversal.
+    - Removed unreachable (garbage) objects in-place from the heap.
+    - Preserved referential integrity and minimized mutation overhead.
+  - **Stop and Copy**:
+    - Copied reachable memory from the active half of the heap to the inactive half, updating all pointer references using a HashMap.
+    - Updated stack and heap references to reflect new memory locations.
+- Designed helper functions like `reachable` for traversal and reference resolution.
+- Used Rust’s type system and borrowing rules to enforce memory safety without `unsafe` code or external crates.
 
-
-**Grade:** 
+**Grade:** 100/100
 
 ---
 
